@@ -27,6 +27,8 @@ export const HW3 = () => {
     setCurrentText("");
   };
 
+  const handleSaveButton = () => handleSave();
+
   return (
     <div id={"hw03"}>
       {currentText ? (
@@ -40,7 +42,7 @@ export const HW3 = () => {
         value={currentText}
         onChange={handleChange}
       />
-      <button id={"hw03-button"} onClick={() => handleSave()}>
+      <button id={"hw03-button"} onClick={handleSaveButton}>
         x
       </button>
       <h1 style={{ marginTop: "50px" }}>СПИСОК ДЕЛ НА ДЕНЬ:</h1>
